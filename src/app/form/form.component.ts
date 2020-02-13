@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from '../models/post.model';
 
 @Component({
   selector: 'app-form',
@@ -6,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+  post : Post = new Post();
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  onSubmit(){
+    console.log(this.post)
+  }
 }
