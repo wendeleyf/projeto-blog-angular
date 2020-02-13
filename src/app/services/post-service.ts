@@ -19,6 +19,6 @@ export class PostService {
 
   buscarPostPrincipal() : Post {
     const posts = this.buscarTodos();
-    return posts[1];
+    return posts[0];
   }
 }
