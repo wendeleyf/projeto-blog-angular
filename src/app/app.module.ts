@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { PostPrincipalComponent } from './home/post-principal/post-principal.component';
 import { PostSecundarioComponent } from './home/post-secundario/post-secundario.component';
 import { PostService } from './services/post-service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PostService } from './services/post-service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [PostService],
   bootstrap: [AppComponent]

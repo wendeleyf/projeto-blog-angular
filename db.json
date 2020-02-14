@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "autor": "Wendeley",
+      "titulo": "Testando dbjson",
+      "conteudo": "Lorem ipsum dolor sit amet",
+      "data": "14/02/2020"
+    }
+  ]
+}

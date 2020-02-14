@@ -1,10 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Post } from '../models/post.model';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PostService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  private readonly API = 'http://localhost:3000/posts';
 
   salvar(post: Post){
     const posts = this.buscarTodos();
@@ -21,4 +24,10 @@ export class PostService {
     const posts = this.buscarTodos();
     return posts[0];
   }
+
+  listJson(){
+    return this.http.get<Post[]>(this.API);
+  }
+
+
 }

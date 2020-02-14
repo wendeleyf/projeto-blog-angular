@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { PostService } from '../services/post-service';
+import { Post } from '../models/post.model';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

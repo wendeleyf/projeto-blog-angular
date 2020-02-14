@@ -1,0 +1,32 @@
+http://localhost:3000/posts
+
+###
+
+POST http://localhost:3000/posts HTTP/1.1
+content-type: application/json
+
+{
+    "autor": "wendeley",
+    "titulo" : "Testando 2",
+    "artigo" : "Lorem Ipsum 2",
+    "data" : "10/10/2020"
+}
+
+###
+
+PUT http://localhost:3000/posts/2 HTTP/1.1
+content-type: application/json
+
+{
+  "autor" : "Wendeley",
+  "titulo" : "Utilizando PUT",
+  "artigo" : "Lorem Ipsum dolor sit amet",
+  "data" : "14/02/2020"
+}
+
+###
+
+DELETE http://localhost:3000/posts/2 HTTP/1.1
+content-type: application/json
+
+

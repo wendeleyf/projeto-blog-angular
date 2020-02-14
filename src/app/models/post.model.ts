@@ -1,6 +1,7 @@
 export class Post{
+  id: number;
   autor: string;
   titulo: string;
-  data: string;
   conteudo: string;
+  data: string;
 }

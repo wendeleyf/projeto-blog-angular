@@ -8,13 +8,13 @@ import { PostService } from 'src/app/services/post-service';
 })
 export class PostSecundarioComponent implements OnInit {
 
-  posts : Post[] = [];
+  posts : Post[];
 
   constructor(private postService: PostService) { }
 
   ngOnInit(): void {
-    this.posts = this.postService.buscarTodos();
-    console.log(this.posts)
+   this.postService.listJson()
+   .subscribe(dados => this.posts = dados);
   }
 
 }
